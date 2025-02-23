@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap'); /* ✅ Font */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* ✅ Prevent scrolling */
+}
+
+.welcome-text {
+    font-size: 48px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+/* ✅ Background */
+.landing-container {
+    background: url("../components/backgrounds/login.jpg") no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* ✅ Move content to the right */
+    justify-content: center;
+    padding-right: 10%; /* ✅ Adjust spacing */
+    text-align: center;
+}
+
+/* ✅ Navigation Bar (Top Right) */
+.navbar {
+    position: absolute;
+    top: 35px;
+    right: 220px;
+    display: flex;
+    gap: 15px;
+}
+.about-website {
+    font-size: 1.2rem; /* Increase readability */
+    max-width: 700px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+  
+.nav-button {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 20px;
+    background-color: transparent   ;
+    color: black;
+    cursor: pointer;    
+    transition: 0.3s ease-in-out;
+    text-align: center;
+}
+
+.nav-button:hover {
+    background-color: rgb(78, 234, 251);
+    box-shadow: 0px 0px 15px rgba(78, 234, 251, 1);
+    transform: scale(1.05);
+}
+
+/* ✅ Welcome Text & Dashboard Button */
+.landing-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.landing-heading {
+    font-family: "Poppins", sans-serif;
+    font-size: 45px;
+    font-weight: 80000;
+    color: black;
+    align-items: left;
+    margin-bottom: 1px;
+    margin-left: 100px;
+}
+
+.dashboard-button {
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 23px;
+    align-items : center;
+    background-color:rgb(5, 8, 192);
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.dashboard-button:hover {
+    box-shadow: 0px 0px 15px rgba(5, 8, 192, 1);
+  transform: scale(1.05);
+}

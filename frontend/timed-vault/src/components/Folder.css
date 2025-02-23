@@ -1,0 +1,113 @@
+.folder-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.folder-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.logout-btn,
+.capsules-btn {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+.logout-btn {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.logout-btn:hover {
+    background-color: #c0392b;
+    transform: scale(1.05);
+}
+
+.capsules-btn {
+    background-color: black;
+    color: white;
+}
+
+.capsules-btn:hover {
+    background-color: #217dbb;
+    transform: scale(1.05);
+}
+
+h2 {
+    font-size: 24px;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.create-folder-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.form-input {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #bdc3c7;
+    transition: all 0.3s ease-in-out;
+    font-size: 14px;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0px 0px 5px rgba(52, 152, 219, 0.5);
+}
+
+/* Custom File Upload */
+.file-upload-box {
+    display: block;
+    padding: 12px;
+    border: 2px dashed #bdc3c7;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.file-upload-box:hover {
+    background-color: #f8f9fa;
+    border-color: #3498db;
+}
+
+/* Hide the default file input */
+.file-input {
+    display: none;
+}
+
+.primary-btn {
+    background: linear-gradient(135deg, #2980b9, #6dd5fa);
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    margin-top: 45px;
+}
+
+.primary-btn:hover {
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+    transform: scale(1.05);
+}

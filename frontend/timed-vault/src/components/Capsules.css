@@ -1,0 +1,165 @@
+/* Capsules.css */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;       /* ensures body can extend */
+    overflow-y: auto;   /* ensures a scrollbar can appear if needed */
+  }
+  
+body {
+    background: url("../components/backgrounds/login.jpg");
+    background-size: 100%;
+}
+.capsules-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    /* background-color: #f9f9f9; */
+    /* border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    display: grid;
+    
+  }
+  
+  .no{
+    margin: auto;
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  .capsules-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .logout-btn, .create-folder-btn {
+    /* background-color: #007bff; */
+    /* color: white; */
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 20px;
+  }
+  
+  .logout-btn:hover, .create-folder-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .folder-list {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 50px;
+  }
+  
+  .folder-box {
+    position: relative; /* Ensure relative positioning for absolute elements */
+    /* background-color: white; */
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 1);
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.box-name{
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+
+.lock-icon {
+    position: absolute;  /* Position it relative to the .folder-box */
+    top: 23px;  /* Distance from the top */
+    right: 10px;  /* Distance from the right */
+    color: red;
+    font-size: 1.2em;
+}
+
+    .your{
+        margin: auto;
+        padding: 50px;
+        font-size: 45px;
+    }
+  
+  
+  .locked-row , .unlocked-folder{
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    margin-bottom: 50px;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .upload-text:hover , .unlock-date-text:hover , .delete-text:hover , .share-text:hover{
+    color: black;
+    scale: 110%;
+  }
+  .folder-box:hover {
+    background-color: #e9ecef;
+    transform: scale(1.1); /* Scale without affecting absolute children */
+    transition: transform 0.3s;
+  }
+  
+  .lock-icon {
+    color: red;
+    font-size: 1.2em;
+    margin-left: 10px;
+  }
+  
+  .upload-text, .unlock-date-text, .delete-text , .share-text {
+    color: #007bff;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .upload-text:hover, .unlock-date-text:hover, .delete-text:hover {
+    color: #0056b3;
+  }
+  
+  .error-text {
+    color: red;
+    font-weight: bold;
+  }
+  
+  .success-text {
+    color: green;
+    font-weight: bold;
+  }
+  
+  .files-section {
+    margin-top: 10px;
+  }
+  
+  .file-image {
+    width: 100px;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 5px;
+  }
+  .oops{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  
+  .wobble {
+    animation: wobble 0.5s ease-in-out;
+  }
+  
+  @keyframes wobble {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+  }
+  

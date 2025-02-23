@@ -1,0 +1,60 @@
+/* src/components/Register.css */
+
+.register-container {
+    max-width: 400px;
+    margin-left: 57%;
+    padding: 20px;
+    text-align: center;
+    zoom: 135%;
+  }
+  
+  .register-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-input {
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+  }
+  
+  .primary-btn {
+    background-color: #2c7be5;
+    color: #fff;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .primary-btn:hover {
+    opacity: 0.9;
+  }
+  
+  .error-text {
+    color: #d9534f;
+    margin-bottom: 10px;
+  }
+  
+  .success-text {
+    color: #5cb85c;
+    margin-bottom: 10px;
+  }
+  
+  /* Add a small section for the login link */
+  .login-redirect {
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .login-link {
+    color: #2c7be5;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .login-link:hover {
+    text-decoration: underline;
+  }
+  
