@@ -84,8 +84,8 @@ Time-Capsule-2.0/
   - Uses Supabase for media handling
   - Uses JWT for authentication
 
-## Deployment
-- Hosted locally for testing and development.
+- **Deployment**
+  - Hosted locally for testing and development.
 
 
 
