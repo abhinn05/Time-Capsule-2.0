@@ -52,7 +52,26 @@ JWT_SECRET=your_jwt_secret
 ## Running the Application
 Once all steps are completed, the website will be running on `http://localhost:3000/` (or another port if specified).
 
+# Time-Capsule-2.0
 
+This repository is organized into separate backend and frontend components.
+
+## Repository Structure
+
+```plaintext
+Time-Capsule-2.0/
+├── backend/
+│   ├── server.js
+│   └── ... (other backend files)
+├── frontend/
+│   └── timed-vault/
+│       ├── package.json
+│       ├── src/
+│       └── ... (other frontend files)
+├── README.md
+├── package-lock.json
+└── package.json
+```
 ## Features
 - **Frontend (Client-Side)**
   - Built with React
